@@ -1,5 +1,5 @@
 
-const MyName = () => {
+const Myname = () => {
     const infos = {"name": "Zachary", "age": 21};
     return (
         <div>
@@ -8,4 +8,4 @@ const MyName = () => {
         </div>
     )
 };
-export default MyName;
+export default Myname;
