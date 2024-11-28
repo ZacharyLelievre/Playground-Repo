@@ -3,14 +3,22 @@ import './App.css';
 import MyName from './components/MyName'; 
 import Prop from './components/Prop';
 import TodoList from './components/TodoList';
+import React, { useState } from 'react';
 
 function App() {
+  const [show, setShow] = useState(true);
   return (
     <div className="App">
       <header className="App-header">
+        <button onClick={()=>{setShow(!show)}}>Toggle</button>
+        {show && (
+          <>
         <MyName  className="hello"/>
         <Prop/>
         <TodoList/>
+        console.log(typeof show)
+        </>
+        )}
         
         <img src={logo} className="App-logo" alt="logo" />
         <p>
