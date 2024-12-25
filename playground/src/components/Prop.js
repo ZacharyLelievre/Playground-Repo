@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 
 
 const PropComponent = () => {
@@ -6,10 +6,17 @@ const PropComponent = () => {
     const handleClick = () => {
         setState(state + 1);
     }
+    const handleClickMinus= () =>{
+        setState(state-1);
+    }
     return (
         <div>
-            <h1>{state}</h1>
-            <button onClick={handleClick}>Click me</button>
+            <h1>Addition</h1>
+            <h2>{state}</h2>
+            <button onClick={handleClick}>Add</button>
+            <h1>Subtraction</h1>
+            <h2>{state}</h2>
+            <button onClick={handleClickMinus}>Remove</button>
         </div>
     )
 }

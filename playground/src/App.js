@@ -4,6 +4,7 @@ import MyName from './components/MyName';
 import Prop from './components/Prop';
 import TodoList from './components/TodoList';
 import React, { useState } from 'react';
+import Rendering from "./components/Rendering";
 
 function App() {
   const [show, setShow] = useState(true);
@@ -16,7 +17,7 @@ function App() {
         <MyName  className="hello"/>
         <Prop/>
         <TodoList/>
-        console.log(typeof show)
+
         </>
         )}
         
@@ -32,6 +33,7 @@ function App() {
         >
           Learn React
         </a>
+        <Rendering/>
       </header>
     </div>
   );
